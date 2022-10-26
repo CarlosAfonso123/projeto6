@@ -15,7 +15,7 @@ export default function Principal({ navigation }) {
             setUsuario(resultado)
         }
         else {
-            Alert.alert('Usuario nao encontrado')
+            Alert.alert('Usuário nao encontrado')
             setUsuario({})
         }
     }
@@ -35,23 +35,33 @@ export default function Principal({ navigation }) {
                     <View style={estilos.seguidoresArea}>
                         <View style={estilos.seguidores}>
                             <Text style={estilos.seguidoresNumero}>{usuario.followers}</Text>
-                            <Text style={estilos.seguidoresTexto}>Seguidores</Text>
+                            <Text style={estilos.seguidoresTexto}>Vendas feitas</Text>
                         </View>
                         <View style={estilos.seguidores}>
                             <Text style={estilos.seguidoresNumero}>{usuario.following}</Text>
-                            <Text style={estilos.seguidoresTexto}>Seguindo</Text>
+                            <Text style={estilos.seguidoresTexto}>Pontos</Text>
                         </View>
                     </View>
                     <TouchableOpacity onPress={() => navigation.navigate('Repositorios', {id: usuario.id})}>
                         <Text style={estilos.repositorios}>
-                            Ver os repositórios
+                            Ver vendas do vendedor
+                        </Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={estilos.botao}
+                                   
+                    >
+                        <Text style={estilos.textoBotao}>
+                            Adicionar cliente
                         </Text>
                     </TouchableOpacity>
                 </>
+
+                
                 }
 
                 <TextInput
-                    placeholder="Busque por um usuário"
+                    placeholder="Nome do Vendedor"
                     autoCapitalize="none"
                     style={estilos.entrada}
                     value={nomeUsuario}
@@ -62,9 +72,19 @@ export default function Principal({ navigation }) {
                     onPress={busca}
                 >
                     <Text style={estilos.textoBotao}>
-                        Buscar
+                        Logar
                     </Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity style={estilos.botao}
+                                   
+                >
+                    <Text style={estilos.textoBotao}>
+                        Cadastrar-se
+                    </Text>
+                </TouchableOpacity>
+
+                
             </View>
         </ScrollView>
     );

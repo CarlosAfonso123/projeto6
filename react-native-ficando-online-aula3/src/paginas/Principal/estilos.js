@@ -8,18 +8,19 @@ const estilos = StyleSheet.create({
         marginBottom: 20,
     },
     botao: {
-        backgroundColor: '#8A07DA',
+        backgroundColor: 'green',
         marginTop: 20,
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 8,
+        borderRadius: 20,
         width: '90%',
     },
     textoBotao: {
         fontWeight: 'bold',
         fontSize: 16,
         color: '#fff',
+        borderRadius: 20,
     },
     entrada: {
         borderWidth: 2,

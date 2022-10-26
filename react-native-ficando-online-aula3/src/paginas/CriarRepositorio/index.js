@@ -16,11 +16,11 @@ export default function CriarRepositorio({ route, navigation }) {
         )
         
         if( resultado === 'sucesso'){
-            Alert.alert('Repositorio criado!')
+            Alert.alert('Produto criado!')
             navigation.goBack();
         }
         else {
-            Alert.alert('Erro ao criar repositório')
+            Alert.alert('Erro ao criar produto')
         }
 
     }
@@ -28,11 +28,17 @@ export default function CriarRepositorio({ route, navigation }) {
     return (
         <View style={estilos.container}>
             <TextInput
-                placeholder="Nome do repositório"
+                placeholder="Nome do produto"
                 autoCapitalize="none"
                 style={estilos.entrada}
                 value={nome}
                 onChangeText={setNome}
+            />
+            <TextInput
+                placeholder="Categoria do produto"
+                autoCapitalize="none"
+                style={estilos.entrada}
+
             />
             <TextInput
                 placeholder="Data de criação"
