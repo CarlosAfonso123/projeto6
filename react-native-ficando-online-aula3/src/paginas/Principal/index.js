@@ -48,13 +48,7 @@ export default function Principal({ navigation }) {
                         </Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={estilos.botao}
-                                   
-                    >
-                        <Text style={estilos.textoBotao}>
-                            Adicionar cliente
-                        </Text>
-                    </TouchableOpacity>
+            
                 </>
 
                 
@@ -81,6 +75,16 @@ export default function Principal({ navigation }) {
                 >
                     <Text style={estilos.textoBotao}>
                         Cadastrar-se
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={estilos.botao}
+                                   
+                >
+                    <Text style={estilos.textoBotao}
+                        onPress={() => navigation.navigate('CriarCliente')}
+                    >
+                        Cadastrar Cliente
                     </Text>
                 </TouchableOpacity>
 

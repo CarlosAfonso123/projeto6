@@ -10,6 +10,8 @@ import Repositorios from './paginas/Repositorios';
 import CriarRepositorio from './paginas/CriarRepositorio';
 import InfoRepositorio from './paginas/InfoRepositorio';
 
+import CriarCliente from './paginas/Clientes/CriarCliente';
+
 export default function Rotas() {
     return (
         <NavigationContainer>
@@ -18,6 +20,9 @@ export default function Rotas() {
                 <Tab.Screen name="Repositorios" component={Repositorios} />
                 <Tab.Screen name="CriarRepositorio" options={{ title: "Escolha produtos" }} component={CriarRepositorio} />
                 <Tab.Screen name="InfoRepositorio" options={{ title: "Vendas do vendedor" }} component={InfoRepositorio} />
+
+                <Tab.Screen name="CriarCliente" options={{ title: "Cadastro Cliente" }} component={CriarCliente} />
+
             </Tab.Navigator>
         </NavigationContainer>
     );

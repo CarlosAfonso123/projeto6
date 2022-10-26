@@ -19,6 +19,15 @@
       "following": 7
     }
   ],
+  "clientes": [
+    {
+      "id": 1,
+      "name": "Pedro",
+      "email": "pedro@gmail.com",
+      "endereco_entrega": "Rua das palmeiras",
+      "postId": 1
+    }
+  ],
   "repos": [
     {
       "name": "Arduino_AVES_Tele",
