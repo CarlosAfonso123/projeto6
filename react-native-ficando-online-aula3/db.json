@@ -3,7 +3,7 @@
     {
       "login": "andre",
       "id": 1,
-      "avatar_url": "https://avatars.githubusercontent.com/u/54721131?v=4",
+      "avatar_url": "https://commons.wikimedia.org/wiki/File:Charles_Stewart_Parnell_(Portrait).jpg",
       "name": "André Oliveira Cunha",
       "email": "andre@email.com",
       "followers": 43,
@@ -28,9 +28,22 @@
       "postId": 1
     }
   ],
+  "categoria": [
+    {
+      "tipo": "Grão",
+      "id": 1
+    }
+  ],
+  "produto": [
+    {
+      "id": 1,
+      "categoria_Id": 1,
+      "preco": 16
+    }
+  ],
   "repos": [
     {
-      "name": "Arduino_AVES_Tele",
+      "name": "Maça",
       "data": "1 de jan. de 2021",
       "postId": 1,
       "id": 3
@@ -60,14 +73,8 @@
       "postId": 2
     },
     {
-      "id": 5,
-      "name": "Alura_cursos",
-      "data": "1 de jan. de 2021",
-      "postId": 1
-    },
-    {
-      "name": "aaa",
-      "data": "aaaa",
+      "name": "Maça, Pera",
+      "data": "1 fev. 2012",
       "postId": 1,
       "id": 7
     },

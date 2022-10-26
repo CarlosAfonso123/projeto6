@@ -15,12 +15,12 @@ export default function Repositorios({ route, navigation }) {
 
     return (
         <View style={estilos.container}>
-                <Text style={estilos.repositoriosTexto}>{repo.length} repositórios criados</Text>
+                <Text style={estilos.repositoriosTexto}>{repo.length} vendas feitas</Text>
                 <TouchableOpacity 
                     style={estilos.botao}
                     onPress={() => navigation.navigate('CriarRepositorio', {id: route.params.id})}
                 >
-                    <Text style={estilos.textoBotao}>Adicionar novo repositório</Text>
+                    <Text style={estilos.textoBotao}>Iniciar nova compra</Text>
                 </TouchableOpacity>
 
                 <FlatList
@@ -33,7 +33,7 @@ export default function Repositorios({ route, navigation }) {
                             onPress={() => navigation.navigate('InfoRepositorio', {item})}
                         >
                             <Text style={estilos.repositorioNome}>{item.name}</Text>
-                            <Text style={estilos.repositorioData}>Atualizado em {item.data}</Text>
+                            <Text style={estilos.repositorioData}>Atualizada em {item.data}</Text>
                         </TouchableOpacity>
                     )}
                 />
