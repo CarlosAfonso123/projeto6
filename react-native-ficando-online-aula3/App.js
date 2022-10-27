@@ -6,6 +6,7 @@ export default function App() {
     <Rotas />
   );
 }
+//securityTextEntry: senha
 //npm install axios@0.26.0
 /*
 json-server --watch --host 192.168.0.201 db.json

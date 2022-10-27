@@ -10,7 +10,6 @@ export default function CriarCliente({ route, navigation }) {
 
     async function criarCliente() {
         const resultado = await criandoClientes(
-            route.params.id,
             nome,
             email,
             endereco_entrega,

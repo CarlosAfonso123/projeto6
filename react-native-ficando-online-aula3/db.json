@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "login": "andre",
+      "login": "charles",
       "id": 1,
       "avatar_url": "https://commons.wikimedia.org/wiki/File:Charles_Stewart_Parnell_(Portrait).jpg",
-      "name": "André Oliveira Cunha",
-      "email": "andre@email.com",
+      "name": "Charles Stewart Parnell",
+      "email": "charles@email.com",
       "followers": 43,
       "following": 54
     },
@@ -43,16 +43,10 @@
   ],
   "repos": [
     {
-      "name": "Maça",
+      "name": "Tomate, Cebola",
       "data": "1 de jan. de 2021",
       "postId": 1,
-      "id": 3
-    },
-    {
-      "id": 4,
-      "name": "bot_piano_tiles",
-      "data": "1 de jan. de 2021",
-      "postId": 1
+      "id": 4
     },
     {
       "id": 1,
@@ -79,8 +73,8 @@
       "id": 7
     },
     {
-      "name": "a",
-      "data": "a",
+      "name": "Pera",
+      "data": "11 fev 2012",
       "postId": 1,
       "id": 8
     }

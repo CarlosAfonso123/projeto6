@@ -7,15 +7,15 @@ export default function CriarRepositorio({ route, navigation }) {
     const [nome, setNome] = useState('');
     const [data, setData] = useState('');
 
-    async function criar(){
+    async function criar() {
         const resultado = await criarRepositoriosDoUsuario(
             route.params.id,
             nome,
             data,
 
         )
-        
-        if( resultado === 'sucesso'){
+
+        if (resultado === 'sucesso') {
             Alert.alert('Produto criado!')
             navigation.goBack();
         }
@@ -28,6 +28,12 @@ export default function CriarRepositorio({ route, navigation }) {
     return (
         <View style={estilos.container}>
             <TextInput
+                placeholder="Categoria do produto"
+                autoCapitalize="none"
+                style={estilos.entrada}
+
+            />
+            <TextInput
                 placeholder="Nome do produto"
                 autoCapitalize="none"
                 style={estilos.entrada}
@@ -35,17 +41,25 @@ export default function CriarRepositorio({ route, navigation }) {
                 onChangeText={setNome}
             />
             <TextInput
-                placeholder="Categoria do produto"
-                autoCapitalize="none"
-                style={estilos.entrada}
-
-            />
-            <TextInput
                 placeholder="Data de criação"
                 autoCapitalize="none"
                 style={estilos.entrada}
                 value={data}
                 onChangeText={setData}
+            />
+
+            <TextInput
+                placeholder="Quantidade"
+                autoCapitalize="none"
+                style={estilos.entrada}
+                
+            />
+
+            <TextInput
+                placeholder="Local de entrega"
+                autoCapitalize="none"
+                style={estilos.entrada}
+                
             />
             <TouchableOpacity style={estilos.botao}
                 onPress={criar}>

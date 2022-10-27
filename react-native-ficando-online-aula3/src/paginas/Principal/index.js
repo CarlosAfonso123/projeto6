@@ -13,6 +13,7 @@ export default function Principal({ navigation }) {
         setNomeUsuario('')
         if (resultado ) {
             setUsuario(resultado)
+            apagar = 0
         }
         else {
             Alert.alert('Usuário nao encontrado')
@@ -26,7 +27,7 @@ export default function Principal({ navigation }) {
                 {
                     usuario?.login &&
                 <>
-                    <View style={estilos.fundo} />
+                    
                     <View style={estilos.imagemArea}>
                         <Image source={{ uri: usuario.avatar_url }} style={estilos.imagem} />
                     </View>
@@ -37,10 +38,6 @@ export default function Principal({ navigation }) {
                             <Text style={estilos.seguidoresNumero}>{usuario.followers}</Text>
                             <Text style={estilos.seguidoresTexto}>Vendas feitas</Text>
                         </View>
-                        <View style={estilos.seguidores}>
-                            <Text style={estilos.seguidoresNumero}>{usuario.following}</Text>
-                            <Text style={estilos.seguidoresTexto}>Pontos</Text>
-                        </View>
                     </View>
                     <TouchableOpacity onPress={() => navigation.navigate('Repositorios', {id: usuario.id})}>
                         <Text style={estilos.repositorios}>
@@ -50,8 +47,6 @@ export default function Principal({ navigation }) {
 
             
                 </>
-
-                
                 }
 
                 <TextInput
@@ -70,13 +65,6 @@ export default function Principal({ navigation }) {
                     </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={estilos.botao}
-                                   
-                >
-                    <Text style={estilos.textoBotao}>
-                        Cadastrar-se
-                    </Text>
-                </TouchableOpacity>
 
                 <TouchableOpacity style={estilos.botao}
                                    
@@ -93,3 +81,4 @@ export default function Principal({ navigation }) {
         </ScrollView>
     );
 }
+//<View style={estilos.fundo} />

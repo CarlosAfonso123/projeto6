@@ -1,11 +1,11 @@
 import api from "../api";
 
-export async function criarCliente(compraId, nome, email){
+export async function criarCliente(nome, email, endereco_Entrega){
     try {
         await api.post(`/repos/`, {
             name: nome,
             email: email,
-            compraId: compraId
+            endereco_Entrega: endereco_Entrega
         });
         return 'sucesso'
     }
