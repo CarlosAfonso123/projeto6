@@ -24,8 +24,7 @@
       "id": 1,
       "name": "Pedro",
       "email": "pedro@gmail.com",
-      "endereco_entrega": "Rua das palmeiras",
-      "postId": 1
+      "endereco_entrega": "Rua das palmeiras"
     }
   ],
   "categoria": [

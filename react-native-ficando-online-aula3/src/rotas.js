@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet } from 'react-native';
-
 const Tab = createNativeStackNavigator();
 
 import Principal from './paginas/Principal';
@@ -13,8 +12,9 @@ import InfoRepositorio from './paginas/InfoRepositorio';
 import CriarCliente from './paginas/Clientes/CriarCliente';
 
 export default function Rotas() {
-    return (
+    return (        
         <NavigationContainer>
+            
             <Tab.Navigator style={estilos.screen}>
                 <Tab.Screen name="Principal" options={{ title: "Login" }} component={Principal}/>
                 <Tab.Screen name="Repositorios" component={Repositorios} />

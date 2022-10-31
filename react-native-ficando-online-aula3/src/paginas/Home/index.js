@@ -6,7 +6,6 @@ export default function Home() {
         <ScrollView>
             <View style={estilos.container}>
                 <>
-
                     <Text style={estilos.textoNome}>{usuario.name}</Text>
                     <Text style={estilos.textoEmail}>{usuario.email}</Text>
                     

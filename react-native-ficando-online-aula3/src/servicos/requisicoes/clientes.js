@@ -2,7 +2,7 @@ import api from "../api";
 
 export async function criarCliente(nome, email, endereco_Entrega){
     try {
-        await api.post(`/repos/`, {
+        await api.post(`/clientes/`, {
             name: nome,
             email: email,
             endereco_Entrega: endereco_Entrega
